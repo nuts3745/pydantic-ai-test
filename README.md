@@ -23,14 +23,14 @@ GEMINI_API_KEY=your_api_key_here
 
 3. Run the game:
 ```bash
-python main.py
+uv run main.py
 ```
 
 ## Project Structure
 
 ```
 pydantic-ai-test/
-├── .env                  # Environment variables
+├── .env                 # Environment variables
 ├── main.py              # Main game logic
 ├── pyproject.toml       # Project dependencies and metadata
 └── README.md            # This file
@@ -67,10 +67,10 @@ agent = Agent(
 
 ## Dependencies
 
-- asyncio>=3.4.3
+- asyncio>=3.4
 - pydantic-ai[logfire]>=0.0.11
-- python-dotenv>=1.0.1
-- ruff>=0.8.2
+- python-dotenv>=1.0
+- ruff>=0.8
 
 ## Development
 
@@ -98,7 +98,7 @@ logfire.configure()
    - Check environment variable loading
 
 2. **Dependency Issues**
-   - Run `uv pip install -e .`
+   - Run `uv sync`
    - Ensure Python version >= 3.9
    - If uv is not installed, install it via: `curl -LsSf https://astral.sh/uv/install.sh | sh`
 
